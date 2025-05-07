@@ -1,0 +1,19 @@
+[features]
+seeds = false
+
+[programs.localnet]
+price_validation_transfer_hook = "BVXu4oZsj9EHbthGov1ygmVx333cUoT1HaiD6DJS7aph"
+
+[programs.devnet]
+price_validation_transfer_hook = "BVXu4oZsj9EHbthGov1ygmVx333cUoT1HaiD6DJS7aph"
+
+[provider]
+cluster = "localnet"
+wallet = "~/.config/solana/id.json"
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
+
+[toolchain]
+
+anchor_version = "0.31.0" 

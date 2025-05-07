@@ -1,0 +1,59 @@
+# Anchor/Solana build artifacts
+.anchor/
+target/
+**/*.rs.bk
+
+# Node.js dependencies
+node_modules/
+node_modules.nosync/
+
+# Environment variables
+.env
+.env.local
+.env.*
+
+# Build outputs
+dist/
+build/
+out/
+
+# Test files
+test-ledger/
+
+# Debug logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.log
+
+# IDE/Editor files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Token 2022 specific
+.coderrect/
+solana-program-library/
+SPL/
+token-2022/
+spl-token-2022-*/
+spl-associated-token-account-*/
+*-keypair.json
+*-dump.txt
+authorized-*.json
+deploy-accounts-*.json
+test-accounts-*.json
+account-data/
+
+# Keep program keypair
+!price_validation_transfer_hook-keypair.json 
