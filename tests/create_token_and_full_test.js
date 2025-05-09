@@ -23,8 +23,8 @@ const {
 const fs = require('fs');
 const BN = require('bn.js');
 
-// URL for local validator
-const connection = new Connection('http://localhost:8899', 'confirmed');
+// URL for devnet
+const connection = new Connection('https://api.devnet.solana.com', 'confirmed');
 
 // Read keypair from file
 const payerKeypair = Keypair.fromSecretKey(
@@ -440,7 +440,7 @@ async function transferTokensWithInvalidPrice(sourceTokenAccount, destinationTok
       if (error.logs) {
         console.log("Error logs:");
         error.logs.forEach(log => console.log(log));
-      }
+          }
       
       return {success: false, expectedFailure: true, error};
     }

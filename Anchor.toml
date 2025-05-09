@@ -8,7 +8,7 @@ price_validation_transfer_hook = "BVXu4oZsj9EHbthGov1ygmVx333cUoT1HaiD6DJS7aph"
 price_validation_transfer_hook = "BVXu4oZsj9EHbthGov1ygmVx333cUoT1HaiD6DJS7aph"
 
 [provider]
-cluster = "localnet"
+cluster = "devnet"
 wallet = "~/.config/solana/id.json"
 
 [scripts]
